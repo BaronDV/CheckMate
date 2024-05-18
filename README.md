@@ -2,7 +2,9 @@
 https://checkmatedemo.azurewebsites.net**
 - Visit this link to check our Web App Live!
 
+
 **Prerequisites**
+
 1.) .NET Core SDK: Install the latest version of the .NET Core SDK from https://dotnet.microsoft.com/download.
 
 2.) Azure Account: (Optional) For cloud deployment, create a free Azure account at https://azure.microsoft.com/free/.
@@ -12,6 +14,7 @@ https://checkmatedemo.azurewebsites.net**
 4.) Git: Install Git on your system from https://git-scm.com/
 
 **Steps**
+
 1.) Clone the Repository: 
   - git clone https://github.com/BaronDV/CheckMate.git
     
@@ -31,6 +34,7 @@ https://checkmatedemo.azurewebsites.net**
   - Open your browser and navigate to https://localhost:5001 (or your specified port).
 
 **Azure Deployment (Optional)**
+
 1.) Create an Azure Web App:
   - Log in to the Azure portal.
   - Create a new Web App resource.
@@ -42,6 +46,7 @@ https://checkmatedemo.azurewebsites.net**
 - Select "Azure" as your target and follow the instructions.
 
 **Additional Configuration (Active Directory)**
+
 If you're using Active Directory, follow these steps:
 1. Register CheckMate in Azure AD:
   - Go to your Azure AD tenant in the Azure portal.
