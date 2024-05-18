@@ -4,8 +4,11 @@ https://checkmatedemo.azurewebsites.net**
 
 **Prerequisites**
 1.) .NET Core SDK: Install the latest version of the .NET Core SDK from https://dotnet.microsoft.com/download.
+
 2.) Azure Account: (Optional) For cloud deployment, create a free Azure account at https://azure.microsoft.com/free/.
+
 3.) SQL Server or Azure SQL Database: Choose and setup your desired database.
+
 4.) Git: Install Git on your system from https://git-scm.com/
 
 **Steps**
