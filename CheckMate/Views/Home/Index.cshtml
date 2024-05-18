@@ -1,43 +1,45 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Home Page";
 }
 
+
 <main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">CheckMate</h1>
-        <p class="lead">Outmaneuver your tasks, one move at a time.</p>
+    <section class="container py-5 my-5 text-center">
+        <h1 class="display-3 mb-4">Unlock your potential with <b style="color:#4F6F52" ;>CheckMate</b></h1>
+        <p class="lead">Get things done faster and unleash your creativity with the power of <b style="color:#4F6F52";>CheckMate</b>.</p>
+        <a class="btn btn-primary btn-lg" href="#" style="background-color: #4F6F52";>Download the CheckMate app</a>
     </section>
 
-    <div>
-
-        @Html.ActionLink("List Tasks", "Index", "TaskDetails") <br />
-        @Html.ActionLink("List Courses", "Index", "CourseCodeRefs")
-
+    <div class="container">
+        <div class="row">
+            <section class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title" style="color:#4F6F52";>Getting Started</h2>
+                        <p class="card-text text-muted">With CheckMate, users are empowered to efficiently organize tasks, set priorities, and track progress.</p>
+                        <a class="btn btn-outline-dark btn-block" onmouseover="this.style.backgroundColor='#4F6F52'" onmouseout="this.style.backgroundColor='transparent';" href="@Url.Action("About", "Home")">Learn More &raquo;</a>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title" style="color:#4F6F52";>View Your Tasks</h2>
+                        <p class="card-text text-muted">CheckMate helps you manage your tasks efficiently. It's designed for streamlined task management.</p>
+                        <a class="btn btn-outline-dark btn-block" onmouseover="this.style.backgroundColor='#4F6F52'" onmouseout="this.style.backgroundColor='transparent';" href="@Url.Action("Index", "TaskDetails")">List Tasks &raquo;</a>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title" style="color:#4F6F52";>View Course Codes</h2>
+                        <p class="card-text text-muted">Effortlessly manage the courses you take. Streamline your course management with ease.</p>
+                        <a class="btn btn-outline-dark btn-block" onmouseover="this.style.backgroundColor='#4F6F52'" onmouseout="this.style.backgroundColor='transparent';" href="@Url.Action("Index", "CourseCodeRefs")">List Courses &raquo;</a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
-
-   
-    <!-- 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
-    </div>
-    -->
-   
 </main>

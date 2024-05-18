@@ -1,9 +1,39 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
 
-    <p>Use this area to provide additional information.</p>
+<main>
+    <section class="container py-5 my-5 text-center">
+        <h1 class="display-3 mb-4">About <b style="color:#4F6F52;">CheckMate</b></h1>
+        <p class="lead"><b>Discover our mission, team, and more.</b></p>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">     
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title" style="color: #4F6F52;">Our Mission</h2>
+                        <p class="card-text">At CheckMate, our mission is to empower individuals and teams to achieve their goals and increase productivity through efficient task management. We believe that organizing tasks and setting priorities are essential steps towards success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title" style="color: #4F6F52;">Our Team</h2>
+                        <p class="card-text">CheckMate was founded by a team of passionate developers who understand the challenges of task management in today's fast-paced world. We strive to provide users with a seamless and intuitive task management experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title" style="color: #4F6F52;">Contact Us</h2>
+                        <p class="card-text">If you have any questions or feedback about CheckMate, we'd love to hear from you. You can reach out to us via email at <a href="mailto:info@checkmate.com">info@checkmate.com</a> or through our social media channels. We're always here to help!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>

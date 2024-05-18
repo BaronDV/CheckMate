@@ -1,19 +1,42 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
 
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
+<main>
+    <section class="container py-5 my-5 text-center ">
+        <h1 class="display-3 mb-4">Get in Touch with <b style="color:#4F6F52" ;>CheckMate</b></h1>
+        <p class="lead"><b>Contact us for any inquiries or support.</b></p>
+    </section>
 
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title" style="color:#4F6F52" ;>General Inquiries</h2>
+                        <p class="card-text">For general inquiries or information about our products and services.</p>
+                        <a href="mailto:inquiries@checkmate.com" <a class="btn btn-outline-dark btn-block" onmouseover="this.style.backgroundColor='#4F6F52'" onmouseout="this.style.backgroundColor='transparent';">inquiries@checkmate.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title" style="color:#4F6F52" ;>Technical Support</h2>
+                        <p class="card-text">Get technical support for any issues or questions you might have.</p>
+                        <a href="mailto:support@checkmate.com" <a class="btn btn-outline-dark btn-block" onmouseover="this.style.backgroundColor='#4F6F52'" onmouseout="this.style.backgroundColor='transparent';">support@checkmate.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title" style="color:#4F6F52" ;>Sales and Partnerships</h2>
+                        <p class="card-text">Interested in our products or partnering with us? Contact our sales team.</p>
+                        <a href="mailto:sales@checkmate.com" <a class="btn btn-outline-dark btn-block" onmouseover="this.style.backgroundColor='#4F6F52'" onmouseout="this.style.backgroundColor='transparent';">sales@checkmate.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>

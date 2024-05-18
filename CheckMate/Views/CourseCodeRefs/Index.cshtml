@@ -3,31 +3,32 @@
 @{
     ViewBag.Title = "Index";
 }
+<br />
+<h2 style ="color:#4F6F52">List Courses</h2>
 
-<h2>Index</h2>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseCodeName)
+            </th>
+            <th></th>
+        </tr>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseCodeName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CourseCodeRefID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.CourseCodeRefID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CourseCodeRefID })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <p
+   <a class="btn btn-outline-dark btn-block" onmouseover="this.style.backgroundColor='#4F6F52'" onmouseout="this.style.backgroundColor='transparent';" href=@Html.ActionLink("Create New", "Create")</a>
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.CourseCodeName)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.CourseCodeName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CourseCodeRefID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CourseCodeRefID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CourseCodeRefID })
-        </td>
-    </tr>
-}
-
-</table>

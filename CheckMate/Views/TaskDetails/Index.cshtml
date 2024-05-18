@@ -3,12 +3,9 @@
 @{
     ViewBag.Title = "Index";
 }
+<br />
+<h2 style="color:#4F6F52" >Tasks Listed</h2>
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -43,3 +40,6 @@
 }
 
 </table>
+<p
+   <a class="btn btn-outline-dark btn-block" onmouseover="this.style.backgroundColor='#4F6F52'" onmouseout="this.style.backgroundColor='transparent';" href="@Html.ActionLink("Create New", "Create")</a>
+</p>
